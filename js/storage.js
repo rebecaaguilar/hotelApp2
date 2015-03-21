@@ -44,6 +44,7 @@ var almacenamiento = {
      	   	    alert('Error: '+err.code);
      	   }
      	   function successCB () {
+     	   	alert("consulta satisfactoria");
      	   	// funcion en caso de que la consulta sea satisfactoria
      	   	var x=null;
      	   }
@@ -52,10 +53,4 @@ var almacenamiento = {
      	   
      }
 };
-
-
-
-
-
-var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
 
