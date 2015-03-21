@@ -33,16 +33,16 @@ var almacenamiento = {
     },
 //====================================METODO QUE CONSULTA LAS RESERVAS DE LA TABLA    
      leerReservas: function () {
-     	   function poputateDB(tx) {
+     	   function populateDB(tx) {
      	   	tx.executeSql("select * from reservas",[],function(tx2,r){
      	   		alert(r.rows.length);
      	   	},function (err) {
      	   		alert('Error: '+err.code); 
      	   	});     	   	
-     	   },
+     	   }
      	   function errorCB() {
      	   	    alert('Error: '+err.code);
-     	   },
+     	   }
      	   function successCB () {
      	   	// funcion en caso de que la consulta sea satisfactoria
      	   	var x=null;
