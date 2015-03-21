@@ -20,16 +20,16 @@ var almacenamiento = {
 					}
 
 					function errorCB(err) {
-    						alert("Error processing SQL: "+err.code);
+    						alert("Error processing SQL: "+err);
 					}
 
 					function successCB() {
     						// alert("success!");
     						window.location.href="#home";
-    						navigator.notifiacion.alert('Reserva guardada en espera de sincronización',null,'Guardado','Aceptar'); //esta es la muetra de mensajes con phonegap
+    						navigator.notification.alert('Reserva guardada en espera de sincronización',null,'Guardado','Aceptar'); //esta es la muetra de mensajes con phonegap
 					}
     	    	
-      			almacenamiento.db.transaction(populateDB, errorCB, successCB);   //almacenamiento es el nombre de la clase, db es el nombre del atributo          	
+      			almacenamiento.db.transaction(populateDB, errorCB, successCB);   //almacenamiento es el nombre de la clase, db es el nombre del atributo      			  			      			      			      			          	
     },
 //====================================METODO QUE CONSULTA LAS RESERVAS DE LA TABLA    
      leerReservas: function () {
