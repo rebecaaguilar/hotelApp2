@@ -48,7 +48,7 @@ var almacenamiento = {
      	   	var x=null;
      	   }
      	   
-     	   almacenamiento.db.trsansaction(populateDB, errorCB, successCB);
+     	   almacenamiento.db.trsansaction();
      	   
      }
 };

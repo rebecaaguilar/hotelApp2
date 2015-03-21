@@ -144,6 +144,5 @@
         <script src="js/API/fileTransfer.js"></script>
         <script src="js/storage.js"></script>
         <script src="js/API/device.js"></script>
-        <script src="js/API/conection.js"></script>
     </body>
 </html>
