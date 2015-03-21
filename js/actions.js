@@ -56,6 +56,7 @@ var fn = {
          	 	   	alert();
          	 	   }  
          	 	   else {
+         	 	   	alert("entro a alert");
          	 	   	almacenamiento.reservar(th,ha,pr,di);
          	 	   }       	 	            	 	   
                  //alert("entro a reservar Tipo hab="+th+" Habitaciones = "+ha+" Personas = "+pr+" Dias = "+di);	 	
