@@ -35,11 +35,16 @@ var almacenamiento = {
  //====================================REGISTRA EN HISTORIAL 
      registraHistorial: function() {
 				function populateDB(tx) {   				
+<<<<<<< HEAD
   					tx.executeSql('CREATE TABLE IF NOT EXISTS historial (id, th, ha, pr, di,fecha)');
   					var d=new Date();
   					var fecha=d.getDay()+'/'+(d.getMonth()+1)+'/'+d.getFullYear();
   					
     					tx.executeSql('INSERT INTO historial (th, ha, pr, di) VALUES ("'+th+'","'+ha+'","'+pr+'","'+di+'","'+fecha+')');
+=======
+  					tx.executeSql('CREATE TABLE IF NOT EXISTS historial (id, th, ha, pr, di)');
+    					tx.executeSql('INSERT INTO historial (th, ha, pr, di) VALUES ("'+th+'","'+ha+'","'+pr+'","'+di+'")');
+>>>>>>> origin/master
 					}
 					function errorCB(err) {
     						alert("Error processing SQL: "+err);
@@ -48,7 +53,11 @@ var almacenamiento = {
 					function successCB() {
     						// alert("success!");
     						window.location.href="#home";
+<<<<<<< HEAD
     						navigator.notification.alert('Historial se ha actualizado',null,'Historial','Aceptar'); //esta es la muestra de mensajes con phonegap
+=======
+    						navigator.notification.alert('Historial guardado en espera de sincronización',null,'Guardado','Aceptar'); //esta es la muestra de mensajes con phonegap
+>>>>>>> origin/master
 					}
                almacenamiento.db.transaction(populateDB, errorCB, successCB);   //almacenamiento es el nombre de la clase, db es el nombre del atributo
             

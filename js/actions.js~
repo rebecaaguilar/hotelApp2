@@ -57,7 +57,11 @@ var fn = {
                                 server.sendReserva(th,ha,pr,di);
          	 	   }  
          	 	   else {
+<<<<<<< HEAD
          	 	   	alert("entro a ejecutar las operaciones");
+=======
+         	 	   	alert("entro a alert");
+>>>>>>> origin/master
          	 	   	almacenamiento.reservar(th,ha,pr,di);
          	 	   	almacenamiento.leerReservas();
                      almacenamiento.registraHistorial(th,ha,pr,di);

@@ -11,6 +11,7 @@ var server = {
             if(msg == 1)
                 transfer.imgUpload(img);
         });
+<<<<<<< HEAD
     },
      sendReserva: function(th,ha,pr,di){
 		$.mobile.loading( 'show' );
@@ -25,4 +26,7 @@ var server = {
 			}
 		});
 	}	
+=======
+    }
+>>>>>>> origin/master
 };
