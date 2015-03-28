@@ -8,7 +8,7 @@
 
         <!-- versionCode is optional and Android only -->
 
-        <preference name="phonegap-version" value="3.6.3" />
+        <preference name="phonegap-version" value="3.7.0" />
 
         <name>Hotel App</name>
 
@@ -17,12 +17,13 @@
         </description>
 
         <author href="http://cenet.mx" email="you@youremail.com">
-            Carlos Celma
+            Rebeca Aguilar
         </author>
         
         <gap:plugin name="org.apache.cordova.dialogs" />
         <gap:plugin name="org.apache.cordova.media-capture" />
         <gap:plugin name="org.apache.cordova.file-transfer" />
         <gap:plugin name="org.apache.cordova.device" />
+        <gap:plugin name="org.apache.cordova.network-information"/>
 
     </widget>
